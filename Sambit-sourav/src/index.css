@@ -1,0 +1,253 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/* ========================================= */
+/* GLOBAL STYLES */
+/* ========================================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ========================================= */
+/* ROOT VARIABLES */
+/* ========================================= */
+
+:root {
+  --bg-primary: #020617;
+  --bg-secondary: #0f172a;
+
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+
+  --accent: #38bdf8;
+  --accent-hover: #0ea5e9;
+
+  --border: rgba(255, 255, 255, 0.08);
+
+  --transition: all 0.3s ease;
+}
+
+/* ========================================= */
+/* HTML */
+/* ========================================= */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ========================================= */
+/* BODY */
+/* ========================================= */
+
+body {
+  margin: 0;
+
+  font-family:
+    'Inter',
+    'Segoe UI',
+    'Roboto',
+    sans-serif;
+
+  background:
+    linear-gradient(
+      180deg,
+      #020617 0%,
+      #0f172a 100%
+    );
+
+  color: var(--text-primary);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  overflow-x: hidden;
+}
+
+/* ========================================= */
+/* ROOT */
+/* ========================================= */
+
+#root {
+  min-height: 100vh;
+}
+
+/* ========================================= */
+/* LINKS */
+/* ========================================= */
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ========================================= */
+/* IMAGES */
+/* ========================================= */
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ========================================= */
+/* BUTTONS */
+/* ========================================= */
+
+button {
+  font-family: inherit;
+}
+
+/* ========================================= */
+/* CODE */
+/* ========================================= */
+
+code {
+  font-family:
+    'Fira Code',
+    'Consolas',
+    monospace;
+}
+
+/* ========================================= */
+/* SCROLLBAR */
+/* ========================================= */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #38bdf8;
+}
+
+/* ========================================= */
+/* TEXT SELECTION */
+/* ========================================= */
+
+::selection {
+  background: rgba(56, 189, 248, 0.3);
+  color: #ffffff;
+}
+
+/* ========================================= */
+/* ACCESSIBILITY */
+/* ========================================= */
+
+:focus-visible {
+  outline: 2px solid #38bdf8;
+  outline-offset: 3px;
+}
+
+/* ========================================= */
+/* REDUCED MOTION */
+/* ========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+.footer {
+  margin-top: 80px;
+  padding: 30px 20px;
+
+  /* BLACK + YELLOW THEME */
+  background: #000000;
+  color: #facc15;
+
+  border-top: 2px solid #facc15;
+
+  text-align: center;
+
+  /* optional glass effect (still subtle on black) */
+  backdrop-filter: blur(12px);
+}
+
+/* Theme toggle area */
+.themeToggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  color: #facc15;
+}
+
+/* Navigation */
+.navLinks {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.navLink {
+  color: #facc15;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.navLink:hover {
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* Social icons */
+.socialLinks {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.socialLinks a {
+  color: #facc15;
+  transition: 0.3s ease;
+}
+
+.socialLinks a:hover {
+  color: #ffffff;
+  transform: scale(1.2);
+}
+
+/* Divider */
+.divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #facc15, transparent);
+  margin: 20px 0;
+}
+
+/* Footer text */
+.text {
+  color: #facc15;
+  font-size: 0.9rem;
+}
